@@ -1,0 +1,49 @@
+body {
+    background-image: url('imagen/fondoBig.png'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff; /* Cambia el color del texto según sea necesario para que sea legible en tu imagen de fondo */
+}
+.download-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.qr-code-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ffd500; 
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 300px;
+}
+@media (max-width: 768px) {
+    #descargaLink {
+        display: block;
+    }
+
+    #descargaQR {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    #descargaLink {
+        display: none;
+    }
+
+    #descargaQR {
+        display: block;
+    }
+}

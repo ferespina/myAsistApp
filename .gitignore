@@ -16,7 +16,7 @@ log.txt
 /.sourcemaps
 /.versions
 /coverage
-
+/node_modules
 # Ionic
 /.ionic
 /www

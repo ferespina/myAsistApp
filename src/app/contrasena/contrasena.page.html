@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <img src="assets/imagen/logosolo.png">
+</ion-header>
+ <ion-content [fullscreen]="true" color="light" class="ion-text-center ion-align-items-center">
+  <form id="form" (submit)="sendEmail($event)">
+    <div class="field">
+      <label for="to_name">Nombre: </label>
+      <input type="text" name="to_name" id="to_name">
+    </div>
+    <br>
+    <div class="field">
+      <label for="to_email">Email: </label>
+      <input type="text" name="to_email" id="to_email">
+    </div>
+    <br>
+    <div class="field">
+      <label for="reply_to">Contraseña nueva: </label>
+      <input type="text" name="reply_to" id="reply_to">
+    </div>
+    <br>
+    <input type="submit" id="button" value="Recuperar" >
+  </form>
+</ion-content>
+<ion-footer>
+  <ion-button [routerLink]="['/login']">volver</ion-button>
+</ion-footer>
